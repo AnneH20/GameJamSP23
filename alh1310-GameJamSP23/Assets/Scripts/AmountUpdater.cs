@@ -6,9 +6,9 @@ using System.Globalization;
 
 public class AmountUpdater : MonoBehaviour
 {
-    public TextMeshProUGUI textDisplay;
-    private int number = 0;
-    private string scoreKey = "Number";
+    public TextMeshProUGUI textDisplay; // text number for each money
+    private int number = 0; // number for each money
+    private string scoreKey = "Number"; 
 
     private void Start()
     {

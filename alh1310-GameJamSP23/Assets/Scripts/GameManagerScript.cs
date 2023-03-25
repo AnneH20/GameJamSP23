@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public MoneyScript moneyScript;
+
     public AmountUpdater pennyUpdater;
     public AmountUpdater nickelUpdater;
     public AmountUpdater dimeUpdater;
@@ -56,6 +58,8 @@ public class GameManagerScript : MonoBehaviour
         twentyUpdater.ResetScore();
         fiftyUpdater.ResetScore();
         hundredUpdater.ResetScore();
+
+        moneyScript.setMoney();
     }
 
     // Update is called once per frame
