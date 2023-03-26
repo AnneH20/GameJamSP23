@@ -3,7 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Penny
+  - Nickel
+  - Dime
+  - Quarter
+  - HalfDollar
+  - $1
+  - $5
+  - $10
+  - $20
+  - $50
+  - $100
   layers:
   - Default
   - TransparentFX

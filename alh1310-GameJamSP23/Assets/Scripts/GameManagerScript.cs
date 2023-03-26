@@ -41,6 +41,8 @@ public class GameManagerScript : MonoBehaviour
     public GameObject fiftyAmount;
     public GameObject hundredAmount;
 
+    public GameObject changeCreated;
+
     public static bool isPaused;
 
     // Start is called before the first frame update
@@ -90,6 +92,8 @@ public class GameManagerScript : MonoBehaviour
         fiftyAmount.SetActive(false);
         hundredAmount.SetActive(false);
 
+        changeCreated.SetActive(false);
+
         Time.timeScale = 0f;
         isPaused = true;
     }
@@ -115,6 +119,8 @@ public class GameManagerScript : MonoBehaviour
         twentyAmount.SetActive(true);
         fiftyAmount.SetActive(true);
         hundredAmount.SetActive(true);
+
+        changeCreated.SetActive(true);
 
         Time.timeScale = 1f;
         isPaused = false;

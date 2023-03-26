@@ -180,6 +180,7 @@ MonoBehaviour:
   twentyAmount: {fileID: 267458079}
   fiftyAmount: {fileID: 1157090270}
   hundredAmount: {fileID: 184388299}
+  changeCreated: {fileID: 2115007817}
 --- !u!4 &2399870
 Transform:
   m_ObjectHideFlags: 0
@@ -342,7 +343,7 @@ GameObject:
   - component: {fileID: 46338206}
   m_Layer: 0
   m_Name: HalfDollar
-  m_TagString: Untagged
+  m_TagString: HalfDollar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -413,7 +414,7 @@ Transform:
   m_Children:
   - {fileID: 459356254}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79794185
 GameObject:
@@ -531,7 +532,7 @@ GameObject:
   - component: {fileID: 84262709}
   m_Layer: 0
   m_Name: Quarter
-  m_TagString: Untagged
+  m_TagString: Quarter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -602,7 +603,7 @@ Transform:
   m_Children:
   - {fileID: 1359206471}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &92800763
 GameObject:
@@ -687,9 +688,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1824396223}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseFiftyDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -820,9 +821,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1568380239}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseOneDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -882,7 +883,7 @@ GameObject:
   - component: {fileID: 135483583}
   m_Layer: 0
   m_Name: Nickel
-  m_TagString: Untagged
+  m_TagString: Nickel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -953,7 +954,52 @@ Transform:
   m_Children:
   - {fileID: 1741375235}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155122528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155122530}
+  - component: {fileID: 155122529}
+  m_Layer: 0
+  m_Name: TestObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &155122529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155122528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d44a5a015974c6dad77efa38a89453, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayText: {fileID: 2115007819}
+--- !u!4 &155122530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155122528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1427.223, y: -491.96133, z: -26.766518}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &184388299
 GameObject:
@@ -967,7 +1013,7 @@ GameObject:
   - component: {fileID: 184388300}
   m_Layer: 0
   m_Name: $100
-  m_TagString: Untagged
+  m_TagString: $100
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1038,7 +1084,7 @@ Transform:
   m_Children:
   - {fileID: 1745803507}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &204965826
 GameObject:
@@ -1322,7 +1368,7 @@ GameObject:
   - component: {fileID: 267458080}
   m_Layer: 0
   m_Name: $20
-  m_TagString: Untagged
+  m_TagString: $20
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1393,7 +1439,7 @@ Transform:
   m_Children:
   - {fileID: 971962516}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275387274
 GameObject:
@@ -1542,7 +1588,7 @@ GameObject:
   - component: {fileID: 307162842}
   m_Layer: 0
   m_Name: $1
-  m_TagString: Untagged
+  m_TagString: $1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1613,7 +1659,7 @@ Transform:
   m_Children:
   - {fileID: 409332799}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &312140167
 GameObject:
@@ -1915,6 +1961,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 204965828}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 46338205}
 --- !u!4 &320394835
 Transform:
   m_ObjectHideFlags: 0
@@ -1928,7 +1976,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &337090095
 GameObject:
@@ -1960,6 +2008,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1992740952}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 517859240}
 --- !u!4 &337090097
 Transform:
   m_ObjectHideFlags: 0
@@ -1973,7 +2023,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &386468023
 GameObject:
@@ -1987,7 +2037,6 @@ GameObject:
   - component: {fileID: 386468027}
   - component: {fileID: 386468026}
   - component: {fileID: 386468025}
-  - component: {fileID: 386468028}
   m_Layer: 5
   m_Name: SubmitButton
   m_TagString: Untagged
@@ -2059,19 +2108,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 386468026}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 386468028}
-        m_TargetAssemblyTypeName: Button, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MainMenu
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &386468026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2110,18 +2147,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 386468023}
   m_CullTransparentMesh: 1
---- !u!114 &386468028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 386468023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0492b41636b724efda03601e81989cf3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &389893997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,9 +2230,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1094999356}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseFiveDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2951,9 +2976,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 893126490}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseOneHundredDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3013,7 +3038,7 @@ GameObject:
   - component: {fileID: 517859241}
   m_Layer: 0
   m_Name: $10
-  m_TagString: Untagged
+  m_TagString: $10
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3084,7 +3109,7 @@ Transform:
   m_Children:
   - {fileID: 2123319136}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568686608
 GameObject:
@@ -3169,9 +3194,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 991333620}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseQuarters
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3302,9 +3327,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 320394834}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseHalfDollars
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4162,6 +4187,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727609446}
   m_CullTransparentMesh: 1
+--- !u!1 &745162502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 745162503}
+  - component: {fileID: 745162505}
+  - component: {fileID: 745162504}
+  m_Layer: 5
+  m_Name: MainMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &745162503
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745162502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2055621512}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &745162504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745162502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Main Menu
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &745162505
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745162502}
+  m_CullTransparentMesh: 1
 --- !u!1 &860245033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,9 +4540,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1589013362}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseNickels
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4460,6 +4620,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1613266539}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 184388299}
 --- !u!4 &893126491
 Transform:
   m_ObjectHideFlags: 0
@@ -4473,7 +4635,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919452447
 GameObject:
@@ -4693,9 +4855,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 337090096}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseTenDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4859,7 +5021,7 @@ GameObject:
   - component: {fileID: 974786492}
   m_Layer: 0
   m_Name: Penny
-  m_TagString: Untagged
+  m_TagString: Penny
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4930,7 +5092,7 @@ Transform:
   m_Children:
   - {fileID: 2124329595}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991333619
 GameObject:
@@ -4962,6 +5124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 919452449}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 84262708}
 --- !u!4 &991333621
 Transform:
   m_ObjectHideFlags: 0
@@ -4975,7 +5139,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1020067301
 GameObject:
@@ -5007,7 +5171,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1020067304
 MonoBehaviour:
@@ -5022,6 +5186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1411601438}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 974786491}
 --- !u!1 &1038054706
 GameObject:
   m_ObjectHideFlags: 0
@@ -5105,9 +5271,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1959218518}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseTwentyDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5238,9 +5404,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 320394834}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseHalfDollars
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5318,6 +5484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 313823823}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 2022743402}
 --- !u!4 &1094999357
 Transform:
   m_ObjectHideFlags: 0
@@ -5331,7 +5499,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1123285195
 GameObject:
@@ -5416,9 +5584,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1094999356}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseFiveDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5478,7 +5646,7 @@ GameObject:
   - component: {fileID: 1157090271}
   m_Layer: 0
   m_Name: $50
-  m_TagString: Untagged
+  m_TagString: $50
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5549,7 +5717,7 @@ Transform:
   m_Children:
   - {fileID: 79794186}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167738601
 GameObject:
@@ -5634,9 +5802,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1568380239}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseOneDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5785,7 +5953,7 @@ RectTransform:
   - {fileID: 1941012702}
   - {fileID: 2115007818}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5823,6 +5991,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1570774151}
+  - {fileID: 2055621512}
   m_Father: {fileID: 1342146301}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6140,9 +6309,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020067304}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreasePennies
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6408,9 +6577,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 893126490}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseOneHundredDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6541,9 +6710,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1844111006}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseDimes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6944,9 +7113,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1844111006}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseDimes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7128,6 +7297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 483718470}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 307162841}
 --- !u!4 &1568380240
 Transform:
   m_ObjectHideFlags: 0
@@ -7141,7 +7312,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1570774150
 GameObject:
@@ -7171,8 +7342,8 @@ RectTransform:
   m_GameObject: {fileID: 1570774150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 672975834}
   m_Father: {fileID: 1342623957}
@@ -7307,6 +7478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 675642278}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 135483582}
 --- !u!4 &1589013363
 Transform:
   m_ObjectHideFlags: 0
@@ -7320,7 +7493,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1613266537
 GameObject:
@@ -7810,9 +7983,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1959218518}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseTwentyDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8404,7 +8577,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1824396222
 GameObject:
@@ -8436,6 +8609,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1495451826}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 1157090270}
 --- !u!4 &1824396224
 Transform:
   m_ObjectHideFlags: 0
@@ -8449,7 +8624,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1830164245
 GameObject:
@@ -8669,9 +8844,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1824396223}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseFiftyDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8749,6 +8924,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1639599157}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 1947527323}
 --- !u!4 &1844111007
 Transform:
   m_ObjectHideFlags: 0
@@ -8762,7 +8939,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1873363674
 GameObject:
@@ -9196,7 +9373,7 @@ GameObject:
   - component: {fileID: 1947527324}
   m_Layer: 0
   m_Name: Dime
-  m_TagString: Untagged
+  m_TagString: Dime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9267,7 +9444,7 @@ Transform:
   m_Children:
   - {fileID: 1938498442}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1959218517
 GameObject:
@@ -9299,6 +9476,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 658079184}
+  changeDisplay: {fileID: 2115007819}
+  currency: {fileID: 267458079}
 --- !u!4 &1959218519
 Transform:
   m_ObjectHideFlags: 0
@@ -9312,7 +9491,135 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1960423568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1960423570}
+  - component: {fileID: 1960423569}
+  m_Layer: 0
+  m_Name: SFXAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1960423569
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960423568}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4ff72c04977c34d3c90fd3e1247fc70a, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1960423570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1960423568}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1079.8278, y: 481.86545, z: -46.29137}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1992740950
 GameObject:
@@ -9461,7 +9768,7 @@ GameObject:
   - component: {fileID: 2022743403}
   m_Layer: 0
   m_Name: $5
-  m_TagString: Untagged
+  m_TagString: $5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9532,7 +9839,7 @@ Transform:
   m_Children:
   - {fileID: 1557187305}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2024371960
 GameObject:
@@ -9752,9 +10059,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1589013362}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseNickels
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9885,9 +10192,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 991333620}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: DecreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: DecreaseQuarters
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9934,6 +10241,128 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046853670}
+  m_CullTransparentMesh: 1
+--- !u!1 &2055621511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055621512}
+  - component: {fileID: 2055621516}
+  - component: {fileID: 2055621515}
+  - component: {fileID: 2055621514}
+  m_Layer: 5
+  m_Name: MainMenuButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2055621512
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055621511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 745162503}
+  m_Father: {fileID: 1342623957}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -125}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2055621514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055621511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2055621515}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2055621515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055621511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2055621516
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055621511}
   m_CullTransparentMesh: 1
 --- !u!1 &2087353004
 GameObject:
@@ -10018,9 +10447,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1020067304}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreasePennies
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10151,9 +10580,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 337090096}
-        m_TargetAssemblyTypeName: AmountUpdater, Assembly-CSharp
-        m_MethodName: IncreaseNumber
+      - m_Target: {fileID: 155122529}
+        m_TargetAssemblyTypeName: CurrencyUpdater, Assembly-CSharp
+        m_MethodName: IncreaseTenDollarBills
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10228,7 +10657,7 @@ RectTransform:
   m_GameObject: {fileID: 2115007817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1342146301}
@@ -10236,7 +10665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 175}
+  m_AnchoredPosition: {x: 0, y: -191.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2115007819

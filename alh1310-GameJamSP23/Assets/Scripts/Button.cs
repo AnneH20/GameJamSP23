@@ -5,13 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class Button : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    public AudioSource buttonSound;
+    public AudioClip button;
+    public string sceneName;
+
+    public void playSound()
     {
-        SceneManager.LoadScene(sceneName);
+        buttonSound.PlayOneShot(button);
+        StartCoroutine(_playSound());
     }
 
-    public void QuitGame()
+    private IEnumerator _playSound()
     {
-        Application.Quit();
+        yield return new WaitForSeconds(button.length);
+        SceneManager.LoadScene(sceneName);
+        Debug.Log("Changing to scene: " + sceneName);
     }
+
+    /*
+    public void LoadScene(string sceneName)
+    {
+        buttonSound.Play();
+        SceneManager.LoadScene(sceneName);
+
+    }
+    */
 }
