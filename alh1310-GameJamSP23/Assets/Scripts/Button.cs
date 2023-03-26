@@ -9,6 +9,10 @@ public class Button : MonoBehaviour
     public AudioClip button;
     public string sceneName;
 
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
     public void playSound()
     {
         buttonSound.PlayOneShot(button);
