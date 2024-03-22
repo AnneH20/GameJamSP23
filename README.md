@@ -4,7 +4,7 @@ My submission to Mississippi State University's Game Jam Spring 2023
 
 The theme was "Change"
 
-Video demonstration can be found here: https://youtu.be/w3NYKp0zIak
+Video demonstration can be found here: https://youtu.be/tilnp_54kuQ
 
 Note: please start with the volume down!
 
