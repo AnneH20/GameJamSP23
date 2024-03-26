@@ -6,7 +6,7 @@ The theme was "Change"
 
 Video demonstration can be found here: https://youtu.be/tilnp_54kuQ
 
-To locate the C# scripts click here: https://github.com/AnneH20/GameJamSP23/tree/main/alh1310-GameJamSP23/Assets/Scripts
+To locate the C# scripts, click here: https://github.com/AnneH20/GameJamSP23/tree/main/alh1310-GameJamSP23/Assets/Scripts
 
 ## Making Change
 
